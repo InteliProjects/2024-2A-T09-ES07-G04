@@ -1,0 +1,92 @@
+/* TagPage.module.css */
+
+.main {
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    margin-bottom: 70px; 
+    margin-top: 30px;
+}
+
+.titleContainer {
+    display: flex;
+    flex-direction: column; /* Empilha o título e o subtítulo verticalmente */
+}
+
+.subTitle {
+    margin-top: 0.2rem;    /* Pequeno espaço entre o título e o subtítulo */
+    font-size: 0.875rem;   /* Tamanho de fonte menor */
+    color: #aaa;           /* Cor diferenciada para subtítulo */
+}
+
+.addTagButton {
+    background-color: #007bff;  /* Estilo do botão de adicionar */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 30px;
+}
+
+.addTagButton:hover {
+    background-color: #0056b3;
+}
+
+.tagsTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border: 1px solid #444; 
+    border-radius: 10px;  
+    border-collapse: separate;  /* Usar separate para evitar o colapso de bordas */
+    border-spacing: 0; 
+    overflow: hidden; 
+}
+
+.tagsTable th, .tagsTable td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #444;
+}
+
+.tagsTable th {
+    color: white;
+}
+
+.tagsTable td {
+    color: #aaa;
+}
+
+.actions {
+    display: flex;
+    gap: 10px;
+}
+
+.edit-btn, .delete-btn {
+    padding: 8px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+}
+
+.edit-btn {
+    background-color: #7A7A7A;
+    color: white;
+}
+
+.delete-btn {
+    background-color: #C91335;
+    color: white;
+}
+
+.footer {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}

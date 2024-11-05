@@ -1,0 +1,63 @@
+/* Estilo padrão da SearchBar */
+.searchBar {
+	display: flex;
+	align-items: center;
+	background-color: #333;
+	padding: 0.5rem 1rem;
+	border-radius: 1.3rem;
+	width: 100%;
+	max-width: 50rem; /* Limite máximo para telas maiores */
+}
+
+/* Estilo específico para a SearchBar na página de tags */
+.tagsStyle {
+	display: flex;
+	align-items: center;
+	background-color: #333;
+	padding: 0.5rem 1rem;
+	border-radius: 1.3rem;
+	width: 100%;
+	max-width: 30rem; 
+}
+
+/* Estilo comum do input */
+.searchBar input,
+.tagsStyle input {
+	padding: 0.5rem;
+	border: none;
+	outline: none;
+	background: transparent;  /* Removendo o fundo branco */
+	color: white;              /* Aplicando cor ao texto */
+	width: 100%;
+	font-size: var(--medium-font);
+}
+
+.searchIcon {
+	cursor: pointer;
+	color: white;  /* Cor do ícone */
+}
+
+.buttons-container {
+	margin-left: auto;
+	gap: 1rem;
+	display: flex;
+}
+
+.recording {
+	border: 2px solid #0060AA;
+	animation: pulse 1s infinite;
+}
+
+.processing {
+	border: 2px solid #0060AA;
+}
+
+.error {
+	border: 2px solid #870C24;
+}
+
+@keyframes pulse {
+	0% { box-shadow: 0 0 5px #0060AA; }
+	50% { box-shadow: 0 0 15px #0060AA; }
+	100% { box-shadow: 0 0 5px #0060AA; }
+}

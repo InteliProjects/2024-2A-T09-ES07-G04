@@ -1,0 +1,21 @@
+.bg {
+    background-color: black;
+    opacity: 55%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 10;
+}
+
+.modal {
+    position: fixed;
+    z-index: 10;
+    min-width: 30rem;
+    padding: 4rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--background-color);
+}

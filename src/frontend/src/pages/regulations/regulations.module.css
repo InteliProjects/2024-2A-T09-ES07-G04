@@ -1,0 +1,44 @@
+.main {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    position: relative;
+    /* Adiciona um contexto de posicionamento para os elementos filhos */
+}
+
+
+.filter {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    position: relative;
+    /* Isso é importante para garantir que os filhos absolutamentes posicionados, como o DatePicker, apareçam */
+    z-index: 1;
+    /* Garante que os elementos dentro deste contêiner sejam renderizados sobre outros */
+    overflow: visible;
+    /* Permite que os elementos filhos que ultrapassam o contêiner sejam renderizados */
+}
+
+
+.regulations-div {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    position: relative;
+    /* Garante que elementos posicionados corretamente dentro deste contexto */
+}
+
+.pagination {
+    margin-left: auto;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+}

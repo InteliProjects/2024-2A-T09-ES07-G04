@@ -1,0 +1,14 @@
+:root {
+    --background-color: #1E1E1E;
+    --secondary-color: #2c2c2c;
+    --tertiary-color: #333333;
+    --stroke-color: #CED4DA;
+    --blue: #42ADFF;
+    --blue-hover: #3482be;
+
+    --secondary-color-font: #C7C7C7;
+    --extra-large-font: 1.6rem;
+    --large-font: 1.2rem;
+    --medium-font: 1rem;
+    --small-font: 0.9rem;
+}

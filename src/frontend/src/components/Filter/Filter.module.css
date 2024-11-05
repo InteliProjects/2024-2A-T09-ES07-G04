@@ -1,0 +1,62 @@
+.select-box {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.title-div {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    border: 1px solid var(--stroke-color);
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    background-color: var(--background-color);
+}
+
+.title {
+    font-size: var(--medium-font);
+    font-weight: 200;
+    margin-right: 0.5rem;
+}
+
+.searchIcon {
+    fill: var(--blue);
+}
+
+.arrowDropdownIcon {
+    fill: var(--blue);
+    margin-left: 0.5rem;
+    transition: transform ease 0.8s;
+}
+
+.arrowDropdownIcon.active {
+    transform: rotate(-180deg);
+}
+
+.options-container {
+    position: absolute;
+    transform: translateY(100%);
+    bottom: -0.25rem;
+    right: 0px;
+    left: 0px;
+    border: 1px solid var(--stroke-color);
+    border-radius: 5px;
+    overflow: auto;
+    background-color: var(--background-color);
+    max-height: 30rem;
+}
+
+.option {
+    padding: 0.5rem 1rem;
+    font-size: var(--medium-font);
+    font-weight: 300;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.option:hover {
+    background-color: var(--secondary-color);
+}

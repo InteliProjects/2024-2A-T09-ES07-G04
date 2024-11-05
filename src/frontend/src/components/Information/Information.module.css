@@ -1,0 +1,10 @@
+.label {
+    font-size: var(--small-font);
+    font-weight: 300;
+    color: var(--stroke-color);
+}
+
+.value {
+    font-size: var(--small-font);
+    font-weight: 500;
+}

@@ -1,0 +1,41 @@
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  text-align: center;
+  transition: margin-left 0.3s ease;
+}
+
+.searchbar-container {
+  margin-bottom: 2.5rem;
+  width: 100%; 
+  display: flex;
+  justify-content: center;
+}
+
+.logoContainer {
+  margin-bottom: 40px;
+}
+
+.logo {
+  max-width: 100%;
+  height: auto;
+}
+
+.quickSearch {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 1200px;
+  flex-wrap: wrap; 
+  gap: 1rem; 
+}
+
+@media (max-width: 768px) {
+  .quickSearch {
+    flex-direction: column;
+    align-items: center;
+  }
+}

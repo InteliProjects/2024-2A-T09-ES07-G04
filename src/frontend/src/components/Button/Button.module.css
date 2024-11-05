@@ -1,0 +1,29 @@
+.button {
+    background-color: var(--secondary-color);
+    outline: none;
+    border: 1px solid var(--stroke-color);
+    color: white;
+    padding: 0.8rem 1.2rem;
+    font-size: var(--medium-font);
+    border-radius: 0.9rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: var(--tertiary-color);
+}
+
+.icon-div {
+    margin-right: 0.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1.3rem;
+}
+
+.icon-div > svg {
+    height: inherit;
+    width: inherit;
+}

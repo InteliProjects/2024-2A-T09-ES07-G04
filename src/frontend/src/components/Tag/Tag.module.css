@@ -1,0 +1,12 @@
+.tag {
+    background-color: var(--blue);
+    color: var(--background-color);
+    padding: 0.2rem 0.6rem;
+    border-radius: 3rem;
+    font-size: var(--small-font);
+    font-weight: 400;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    text-align: center;
+}

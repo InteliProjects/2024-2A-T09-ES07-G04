@@ -1,0 +1,16 @@
+
+.anchor {
+    text-decoration: none;
+    color: var(--blue);
+    font-size: var(--medium-font);
+    font-weight: 300;
+    width:fit-content;
+}
+
+.anchor:hover {
+    color: var(--blue-hover);
+}
+
+.anchor::before {
+    content: "• ";
+}

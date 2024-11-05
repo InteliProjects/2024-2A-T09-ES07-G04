@@ -1,0 +1,18 @@
+services:
+  database:
+    build:
+      context: ./src/backend/database/
+      dockerfile: dockerfile
+    env_file:
+      - .env
+    ports:
+      - "5002:5002" 
+
+  pln:
+    build:
+      context: ./src/backend/pln/
+      dockerfile: dockerfile
+    env_file:
+      - .env
+    ports:
+      - "5000:5000"  

@@ -1,0 +1,15 @@
+.search-head {
+    display: flex;
+    height: min-content;
+    justify-content: center;
+}
+
+.logo-container {
+    width: 3.8rem;
+    min-width: 3.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1rem;
+    cursor: pointer;
+}

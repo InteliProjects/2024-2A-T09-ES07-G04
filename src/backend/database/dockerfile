@@ -1,0 +1,16 @@
+FROM python:3.11
+
+ENV DATABASE_URL=postgresql://postgres.apnpireesiiohfokbskg:J0s3l1t0_Jun!0R@aws-0-sa-east-1.pooler.supabase.com:6543/postgres
+
+WORKDIR /app
+
+COPY . .
+
+RUN python -m venv venv
+
+RUN ./venv/bin/pip install --no-cache-dir -r requirements.txt
+
+EXPOSE 5002
+
+# Comando para rodar o Gunicorn
+CMD ["./venv/bin/gunicorn", "--bind", "0.0.0.0:5002", "run:app"]
